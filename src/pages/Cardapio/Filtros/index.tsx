@@ -6,11 +6,11 @@ interface IOpcao {
     label: String
 }
 
-export default function Filtros(opcao: IOpcao) {
+export default function Filtros() {
     return (
-        <div className={styles.filtro}>
+        <div className={styles.filtros}>
             {filtros.map((opcao) => (
-                <button className={styles.filtro__filtro} key={opcao.id}>
+                <button className={styles.filtros__filtro} key={opcao.id}>
                     {opcao.label}
                 </button>
             )
